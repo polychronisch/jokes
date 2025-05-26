@@ -20,10 +20,10 @@ A Vue 3 application built with TypeScript and Tailwind CSS that integrates with 
 
 ## 🧱 Project Structure
 
-├── composables/ # Reusable logic (API communication)
-├── components/ # Vue components (JokeCard, Filters, etc.)
-├── views/ # Main views (Discovery, Collection)
-├── App.vue # Root component
+- ├── composables/ # Reusable logic (API communication)
+- ├── components/ # Vue components (JokeCard, Filters, etc.)
+- ├── views/ # Main views (Discovery, Collection)
+- ├── App.vue # Root component
 
 ## 🚀 Getting Started
 
