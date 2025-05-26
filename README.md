@@ -32,8 +32,8 @@ A Vue 3 application built with TypeScript and Tailwind CSS that integrates with 
 - Node.js (v16 or higher recommended)
 - npm or yarn
 
-npm install
-npm run build - npm run
+- npm install
+- npm run build - npm run dev
 
 ### ⚙️ Configuration
 
