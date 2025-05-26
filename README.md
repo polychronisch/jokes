@@ -1,55 +1,56 @@
-# epignosis
+# 🤣 Vue Joke Collector
 
-This template should help get you started developing with Vue 3 in Vite.
+A Vue 3 application built with TypeScript and Tailwind CSS that integrates with the [Official Joke API](https://github.com/15Dkatz/official_joke_api) to fetch and display jokes. Users can save their favorite jokes, rate them from 1 to 5 stars, and filter or sort their personal joke collection.
 
-## Recommended IDE Setup
+## 📸 Features
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- 🎭 Fetch random jokes from the Official Joke API
+- ⭐ Rate jokes (1 to 5 stars)
+- 💾 Store jokes in localStorage
+- 🗃️ Manage a personal joke collection
+- 🔍 Filter jokes by rating
+- ↕️ Sort jokes:
+  - Alphabetically (A–Z / Z–A)
+  - By rating (High–Low / Low–High)
+- ⚡ Built using:
+  - Vue 3 with the Composition API
+  - TypeScript
+  - Tailwind CSS
+  - Modular composables architecture
 
-## Type Support for `.vue` Imports in TS
+## 🧱 Project Structure
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+├── composables/ # Reusable logic (API communication)
+├── components/ # Vue components (JokeCard, Filters, etc.)
+├── views/ # Main views (Discovery, Collection)
+├── App.vue # Root component
 
-## Customize configuration
+## 🚀 Getting Started
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+### Prerequisites
 
-## Project Setup
+- Node.js (v16 or higher recommended)
+- npm or yarn
 
-```sh
 npm install
-```
+npm run build - npm run
 
-### Compile and Hot-Reload for Development
+### ⚙️ Configuration
 
-```sh
-npm run dev
-```
+No additional configuration is required. The app communicates with the public Official Joke API and stores data locally in the browser's localStorage.
 
-### Type-Check, Compile and Minify for Production
+### 🔧 Tech Stack
 
-```sh
-npm run build
-```
+Vue 3
 
-### Run Headed Component Tests with [Cypress Component Testing](https://on.cypress.io/component)
+TypeScript
 
-```sh
-npm run test:unit:dev # or `npm run test:unit` for headless testing
-```
+Tailwind CSS
 
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
+Vite (for build and dev server)
 
-```sh
-npm run test:e2e:dev
-```
+Official Joke API
 
-This runs the end-to-end tests against the Vite development server.
-It is much faster than the production build.
+### 🧪 Future Improvements (optional)
 
-But it's still recommended to test the production build with `test:e2e` before deploying (e.g. in CI environments):
-
-```sh
-npm run build
-npm run test:e2e
-```
+Add animations or transitions for UI feedback - especially the part for changing jokes

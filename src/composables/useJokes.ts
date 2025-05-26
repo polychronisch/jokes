@@ -1,7 +1,13 @@
 import { ref } from 'vue'
 
 export function useJokes() {
-  const joke = ref(null)
+  const joke = ref<{
+    id: number
+    type: string
+    setup: string
+    punchline: string
+    rating: number
+  } | null>(null)
   const loading = ref(false)
   const error = ref('')
   const jokeType = ref<'random' | 'programming'>('random')

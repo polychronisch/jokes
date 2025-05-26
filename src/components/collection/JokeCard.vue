@@ -11,12 +11,12 @@
   </div>
 </template>
 
-<script setup>
-import { ref } from 'vue';
+<script setup lang="ts">
+import { ref } from 'vue'
 
-const props = defineProps<{ joke: any }>();
-const emit = defineEmits(['save']);
-const showPunchline = ref(false);
+defineProps<{ joke: any }>()
+const emit = defineEmits(['save'])
+const showPunchline = ref(false)
 </script>
 
 <style scoped>
