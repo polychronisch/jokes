@@ -1,17 +1,16 @@
-<script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import Menu from '@/components/Menu.vue'
-</script>
-
 <template>
   <div class="epignosis block">
     <header class="p-3 bg-gray-100 shadow-md">
       <Menu />
     </header>
-
     <RouterView />
   </div>
 </template>
+
+<script setup lang="ts">
+import { RouterLink, RouterView } from 'vue-router'
+import Menu from '@/components/Menu.vue'
+</script>
 
 <style scoped>
 header {

@@ -19,7 +19,7 @@ export function useJokes() {
       const data = await res.json()
       joke.value = {
         ...(Array.isArray(data) ? data[0] : data),
-        rating: 0,
+        rating: 0, //set the rating 0, we create the structure for handling this value too
       }
     } catch (err) {
       error.value = 'Could not fetch joke. Please try again.'

@@ -53,6 +53,7 @@
 import { ref } from 'vue'
 import { useJokes } from '@/composables/useJokes'
 import Rating from '@/components/Rating.vue'
+
 type Joke = {
   id: number
   type: string
@@ -64,6 +65,7 @@ type Joke = {
 const { joke, jokeType, loading, error, fetchJoke } = useJokes()
 const showPunchline = ref(false)
 const rating = ref(0)
+
 const togglePunchline = () => {
   showPunchline.value = !showPunchline.value
 }
@@ -104,7 +106,6 @@ const saveJoke = () => {
   alert('Joke saved to collection!')
 }
 
-// Fetch on mount
 fetchJoke()
 </script>
 
